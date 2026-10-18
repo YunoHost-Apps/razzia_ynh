@@ -60,11 +60,11 @@ ram.runtime = "50M"
     main.url = "/"
     main.auth_header = false
 
-    manager.url = "/manager"
-    manager.auth_header = false
-    manager.allowed = "visitors"
-    manager.show_tile = false
-    manager.protected = true
+    #manager.url = "/manager"
+    #manager.auth_header = false
+    #manager.allowed = "visitors"
+    #manager.show_tile = false
+    #manager.protected = true
 
     api.url = "/api"
     api.auth_header = false
