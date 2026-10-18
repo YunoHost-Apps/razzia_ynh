@@ -60,7 +60,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     manager.url = "/manager"
-    manager.auth_header = false
     manager.show_tile = false
     manager.allowed = "visitors"
 
