@@ -55,7 +55,7 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
-    subdirs = "branding"
+    subdirs = ["config"]
     group = "www-data:r-x"
     
     [resources.permissions]
