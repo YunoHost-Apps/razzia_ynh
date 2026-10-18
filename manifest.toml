@@ -72,6 +72,13 @@ ram.runtime = "50M"
     api.show_tile = false
     api.protected = true
 
+    ws.url = "/ws"
+    ws.auth_header = false
+    ws.allowed = "visitors"
+    ws.show_tile = false
+    ws.protected = true
+
+
     [resources.ports]
     main.default = 3000
 	socket.default = 3001
