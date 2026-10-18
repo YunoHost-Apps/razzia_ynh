@@ -60,8 +60,9 @@ ram.runtime = "50M"
     main.url = "/"
 
     manager.url = "/manager"
-    manager.show_tile = false
     manager.allowed = "visitors"
+    manager.show_tile = false
+    manager.protected = true
 
     [resources.ports]
     main.default = 3000
