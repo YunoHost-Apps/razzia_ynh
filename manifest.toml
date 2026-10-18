@@ -59,6 +59,10 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
 
+    manager.url = "/manager"
+    manager.auth_header = false
+    manager.show_tile = false
+
     [resources.ports]
     main.default = 3000
 	socket.default = 3001
