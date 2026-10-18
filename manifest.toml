@@ -64,6 +64,11 @@ ram.runtime = "50M"
     manager.show_tile = false
     manager.protected = true
 
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.show_tile = false
+    api.protected = true
+
     [resources.ports]
     main.default = 3000
 	socket.default = 3001
