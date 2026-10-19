@@ -7,7 +7,7 @@ name = "Razzia"
 description.en = "Quiz platform for smaller events"
 description.fr = "Plateforme de quiz pour les petits événements"
 
-version = "4.0.1~ynh1"
+version = "4.0.1~ynh2"
 
 maintainers = ["Thovi98"]
 
@@ -55,15 +55,33 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
+    subdirs = ["config"]
+    group = "www-data:r-x"
     
     [resources.permissions]
     main.url = "/"
+
+    manager.url = "/manager"
+    manager.allowed = "all_users"
+    manager.show_tile = true
 
     api.url = "/api"
     api.auth_header = false
     api.allowed = "visitors"
     api.show_tile = false
     api.protected = true
+
+    media.url = "/media"
+    media.auth_header = false
+    media.allowed = "visitors"
+    media.show_tile = false
+    media.protected = true
+
+    branding.url = "/branding"
+    branding.auth_header = false
+    branding.allowed = "visitors"
+    branding.show_tile = false
+    branding.protected = true
 
     [resources.ports]
     main.default = 3000
