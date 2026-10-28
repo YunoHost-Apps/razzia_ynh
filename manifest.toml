@@ -7,7 +7,7 @@ name = "Razzia"
 description.en = "Quiz platform for smaller events"
 description.fr = "Plateforme de quiz pour les petits événements"
 
-version = "4.0.1~ynh2"
+version = "4.0.2~ynh1"
 
 maintainers = ["Thovi98"]
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Ralex91/Razzia/archive/refs/tags/4.0.1.tar.gz"
-    sha256 = "47a16277a90c8c4573932ffb4a0ed1fead7913c7e99c33cfb2b76f8a1222e221"
+    url = "https://github.com/Ralex91/Razzia/archive/refs/tags/4.0.2.tar.gz"
+    sha256 = "b70b00abe9e99bfc668d095ed2b20057097a2357fdf50e5c5ac75aab5df9b084"
 
     autoupdate.strategy = "latest_github_tag"
 
