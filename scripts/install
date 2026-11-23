@@ -50,6 +50,9 @@ touch /var/log/$app/$app.log
 #=================================================
 ynh_script_progression "Building App... This may take quiet some time"
 
+# Since nodejs 25, corepack is removed from nodejs and should be installed separately.
+ynh_hide_warnings npm install -g corepack@latest
+
 pushd $install_dir
 	export CYPRESS_INSTALL_BINARY=0
     ynh_hide_warnings corepack enable && corepack prepare pnpm@10 --activate
